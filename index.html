@@ -11,9 +11,10 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="index.html" aria-label="True Point Services home">
-      <span class="brand-mark">TP</span>
+      <svg class="brand-logo" width="38" height="44" viewBox="90 78 160 184" role="img" aria-hidden="true" focusable="false" style="display:block;flex-shrink:0" xmlns="http://www.w3.org/2000/svg"><polygon points="170,80 248,125 248,215 170,260 92,215 92,125" fill="#1E2A32"/><rect x="128" y="116" width="84" height="20" rx="3" fill="#F4F1EA"/><rect x="160" y="136" width="20" height="62" fill="#F4F1EA"/><circle cx="170" cy="222" r="12" fill="#E8742C"/></svg>
       <span><strong>TRUE POINT</strong><small>SERVICES</small></span>
     </a>
+    <p style="font-size: 2.0rem;"><strong>Business Solutions That Move You Forward</strong></p>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Main navigation">
       <a href="#home">Home</a>
@@ -29,7 +30,7 @@
 <section id="home" class="hero">
   <div class="hero-grid container">
     <div class="hero-copy">
-      <span class="eyebrow">BUSINESS SUPPORT • ORGANIZATION • STRATEGY</span>
+      <span class="eyebrow hero-eyebrow" style="position:relative;top:-5.5rem;">BUSINESS SUPPORT • ORGANIZATION • STRATEGY</span>
       <h1>Find your <span>true point</span> of progress.</h1>
       <p>Practical business services for organizations that need clearer processes, better organization, and dependable support.</p>
       <div class="hero-actions">
@@ -124,11 +125,15 @@
       <h2>Tell us what you are working on.</h2>
       <p>Use the form and give us a quick overview of what you need. We can discuss the project and determine whether True Point Services is a good fit.</p>
       <div class="contact-details">
-        <div><strong>Email</strong><span>your-email@example.com</span></div>
+        <div><strong>Email</strong><span>jonvandermark@gmail.com</span></div>
         <div><strong>Location</strong><span>Vestal, New York</span></div>
       </div>
     </div>
-    <form id="contactForm" class="contact-form">
+    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New inquiry from True Point Services website">
+      <input type="hidden" name="from_name" value="True Point Services Website">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
       <label>Name<input type="text" name="name" required placeholder="Your name"></label>
       <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
       <label>Service<select name="service"><option>Business / Website Audit</option><option>Budgeting & Organization</option><option>Data Entry / Administrative Support</option><option>Digital Reproduction</option><option>Business Consulting</option><option>Custom Project</option></select></label>
@@ -142,7 +147,10 @@
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">TP</span><span><strong>TRUE POINT</strong><small>SERVICES</small></span></a><p>Practical business solutions. Clear direction. Real support.</p></div>
+    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">
+    
+       <svg class="brand-logo" width="38" height="44" viewBox="90 78 160 184" role="img" aria-hidden="true" focusable="false" style="display:block;flex-shrink:0" xmlns="http://www.w3.org/2000/svg"><polygon points="170,80 248,125 248,215 170,260 92,215 92,125" fill="#1E2A32"/><rect x="128" y="116" width="84" height="20" rx="3" fill="#F4F1EA"/><rect x="160" y="136" width="20" height="62" fill="#F4F1EA"/><circle cx="170" cy="222" r="12" fill="#E8742C"/></svg>
+    </span><span><strong>TRUE POINT</strong><small>SERVICES</small></span></a><p>Practical business solutions. Clear direction. Real support.</p></div>
     <div><strong>Quick Links</strong><a href="#services">Services</a><a href="#about">About</a><a href="#why-us">Why Us</a><a href="#contact">Contact</a></div>
     <div><strong>Services</strong><span>Auditing</span><span>Budgeting</span><span>Data Entry</span><span>Consulting</span></div>
   </div>
